@@ -1,0 +1,21 @@
+# 构建产物
+build/
+build-*/
+*.o
+*.obj
+*.exe
+*.out
+
+# 调试产物
+*.pdb
+*.ilk
+core
+vgcore.*
+
+# 编辑器
+.vscode/
+.idea/
+
+# 系统
+.DS_Store
+Thumbs.db
