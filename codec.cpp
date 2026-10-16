@@ -37,6 +37,9 @@ bool decode_into_buffer(const char* buf, size_t len, char* out, size_t out_cap) 
     if (!decode_frame(buf, len, &n)) {
         return false;
     }
+    if (n > out_cap) {
+        return false;
+    }
     if (len < 4 + n) {
         return false;
     }
